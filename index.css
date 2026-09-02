@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+@import "tailwindcss";
+
+
+
+:root {
+  --color-obsidian-void: #0C0B0A;
+  --color-obsidian-base: #0C0B0A;
+  --color-obsidian-surface: rgba(255, 255, 255, 0.05);
+  --color-obsidian-elevated: #181815;
+
+  --color-bone-bright: #FFFFFF;
+  --color-bone-primary: #f5f2ed;
+  --color-bone-muted: #D4D0C8;
+  --color-bone-faint: #8E8A82;
+
+  --color-sandstone-matrix: #1E1B16;
+  --color-sandstone-ironstone: #2A241C;
+  --color-sandstone-ochre: #453B2F;
+  --color-sandstone-dust: #6E6250;
+
+  --color-provenance-gold: #C8A97E;
+  --color-provenance-gold-muted: rgba(255, 184, 0, 0.5);
+}
+
+body {
+  background-color: var(--color-obsidian-base);
+  color: var(--color-bone-primary);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.03) 0%, transparent 60%);
+  min-height: 100vh;
+}
+
+/* Subtle archival texture */
+.archival-grain {
+  background-image: radial-gradient(rgba(245, 243, 237, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none;
+}
+
+/* Typography Utility Classes */
+.font-display {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+}
+.font-serif-editorial {
+  font-family: 'IBM Plex Serif', serif;
+}
+.font-serif-body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+}
+.font-mono-tech {
+  font-family: 'IBM Plex Mono', monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* Borders & Dividers */
+.border-hairline {
+  border: 1px solid rgba(242, 240, 235, 0.08);
+}
+.border-hairline-subtle {
+  border: 1px solid rgba(242, 240, 235, 0.14);
+}
+.border-hairline-gold {
+  border: 1px solid rgba(255, 184, 0, 0.35);
+}
+.border-dashed-archival {
+  border: 1px dashed rgba(242, 240, 235, 0.15);
+}
+
+/* Registration Crosshairs / Field Marks */
+.crosshair-corner {
+  position: relative;
+}
+.crosshair-corner::before {
+  content: "+";
+  position: absolute;
+  top: -6px;
+  left: -5px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: rgba(242, 240, 235, 0.3);
+}
+.crosshair-corner::after {
+  content: "+";
+  position: absolute;
+  bottom: -6px;
+  right: -5px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: rgba(242, 240, 235, 0.3);
+}
+
+/* Glow & Optical Accents */
+.gold-glow {
+  text-shadow: 0 0 24px rgba(255, 184, 0, 0.5), 0 0 10px rgba(255, 184, 0, 0.3);
+}
+.gold-glow-subtle {
+  text-shadow: 0 0 14px rgba(255, 184, 0, 0.3);
+}
+
+
+/* LUXURY TEXTURE & LIGHTING OVERLAYS */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  pointer-events: none;
+  z-index: 9998;
+  background: radial-gradient(circle at 50% -20%, rgba(200, 169, 126, 0.08) 0%, rgba(12, 11, 10, 0) 60%);
+}

@@ -1,0 +1,40 @@
+<svg width="240" height="180" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Australia Mainland matching official APP Brand Identity -->
+  <path d="M148 24
+           C149 18 152 10 153 6
+           C154 10 152 20 155 28
+           C159 38 167 48 169 58
+           C172 70 170 82 165 94
+           C160 106 150 116 142 124
+           C137 128 130 129 125 126
+           C118 121 114 115 107 115
+           C100 115 95 121 88 122
+           C81 123 72 120 64 118
+           C54 116 44 117 35 113
+           C28 109 23 103 18 96
+           C13 86 11 74 13 63
+           C16 52 23 45 33 41
+           C41 38 52 39 60 33
+           C66 28 73 21 82 20
+           C90 19 99 24 106 30
+           C112 35 119 39 127 39
+           C134 39 139 34 142 29
+           Z" 
+        stroke="#F2F0EB" 
+        stroke-width="2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        fill="none" />
+  
+  <!-- Tasmania -->
+  <path d="M144 138
+           C148 137 151 140 151 144
+           C150 149 145 153 141 150
+           C138 148 139 140 144 138
+           Z" 
+        stroke="#F2F0EB" 
+        stroke-width="2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        fill="none" />
+</svg>
