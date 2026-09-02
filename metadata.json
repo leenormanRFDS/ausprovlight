@@ -1,0 +1,6 @@
+{
+  "name": "Australian Provenance Project",
+  "description": "Exploration, living heritage archive, and provenance discovery platform for the Australian Provenance Project.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
